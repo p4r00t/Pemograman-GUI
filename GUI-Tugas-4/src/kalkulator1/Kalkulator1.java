@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author BintangSatu
+ * @author p4r00t
  */
 public class Kalkulator1 extends Application {
     
