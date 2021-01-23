@@ -5,10 +5,13 @@
  */
 package gui.alamat;
 
+import bukualamat.model.DataPersonal;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -17,14 +20,27 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author p4r00t
+ * @author Susi
  */
 public class GUIAlamat extends Application {
     
     //variabel kelas
     private Stage stageAplikasi;
     private BorderPane rootAplikasi;
+    private final ObservableList<DataPersonal> dataperson = FXCollections.observableArrayList();
     
+public GUIAlamat(){
+    dataperson.add(new DataPersonal("Agus Nuri", "Fadli"));
+    dataperson.add(new DataPersonal("Budi", "Santoso"));
+    dataperson.add(new DataPersonal("Ahmad", "Dahlan"));
+    dataperson.add(new DataPersonal("Hasyim", "Asy'ari"));
+    dataperson.add(new DataPersonal("Anies", "Baswedan"));
+    dataperson.add(new DataPersonal("Ridwan", "Kamil"));
+}
+
+public ObservableList<DataPersonal> getDataPersonal(){
+    return dataperson;
+}
     @Override
     public void start(Stage primaryStage) throws IOException{
         this.stageAplikasi = primaryStage;
