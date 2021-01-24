@@ -32,10 +32,10 @@ public class GUIAlamat extends Application {
 public GUIAlamat(){
     dataperson.add(new DataPersonal("Agus Nuri", "Fadli"));
     dataperson.add(new DataPersonal("Budi", "Santoso"));
-    dataperson.add(new DataPersonal("Ahmad", "Dahlan"));
-    dataperson.add(new DataPersonal("Hasyim", "Asy'ari"));
-    dataperson.add(new DataPersonal("Anies", "Baswedan"));
-    dataperson.add(new DataPersonal("Ridwan", "Kamil"));
+    dataperson.add(new DataPersonal("Carla", "Ginting"));
+    dataperson.add(new DataPersonal("Susila", "Wati"));
+    dataperson.add(new DataPersonal("Bagir", "Al Hadar"));
+    dataperson.add(new DataPersonal("Liza", "Rifan"));
 }
 
 public ObservableList<DataPersonal> getDataPersonal(){
